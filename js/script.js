@@ -33,7 +33,7 @@ console.log("Hello World")
 
 // Step 5: Write the logic to play a single round
 //
-// Crete function playRound with parameters humanChoice and computerChoice
+// Crete function named playRound with parameters humanChoice and computerChoice
 // Convert humanChoice to lowercase and store it in a new variable
 // IF humanChoice is equal to computerChoice THEN
 //     Print "It's a tie!"
@@ -56,3 +56,38 @@ const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
+
+
+// Step 6: Write the logic to play the entire game
+//
+// Create function named playGame
+//  Declare humanScore and computerScore, and set both to 0
+//  Create function named playRound with parameters humanChoice and computerChoice
+//      Convert humanChoice to lowercase
+//      IF humanChoice is equal to computerChoice THEN
+//         Print "It's a tie!"
+//      ELSE IF (humanChoice is "rock" AND computerChoice is "scissors")
+//           OR (humanChoice is "paper" AND computerChoice is "rock")
+//           OR (humanChoice is "scissors" AND computerChoice is "paper") THEN
+//         Print "You win! [humanChoice] beats [computerChoice]"
+//         Increment humanScore by 1
+//      ELSE
+//         Print "You lose! [computerChoice] beats [humanChoice]"
+//         Increment computerScore by 1
+//      END IF
+//  END FUNCTION
+//
+//  Repeat 5 times:
+//      Get the human's choice using getHumanChoice
+//      Get the computer's choice using getComputerChoice
+//      Call playRound with the human and computer choices
+//
+//  Print final scores
+//     IF humanScore is greater than computerScore THEN
+//         Print "You are the overall winner!"
+//     ELSE IF computerScore is greater than humanScore THEN
+//         Print "The computer is the overall winner!"
+//     ELSE
+//         Print "The game is a tie!"
+//     END IF
+// END FUNCTION
