@@ -8,10 +8,10 @@ console.log("Hello World")
 //   Multiply the random nuber by 3
 //   Round result to nearest whole number with Math.floor()
 //   IF number is 0 THEN
-//      return rock string
+//      return "rock"
 //   ELSE IF number is 1 THEN
-//      return paper string
+//      return "paper"
 //   ELSE
-//      return scissors string
+//      return "scissors"
 // Test what function returns with console.log()
 // END
