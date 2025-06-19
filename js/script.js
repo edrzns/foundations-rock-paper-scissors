@@ -23,3 +23,9 @@ console.log("Hello World")
 // Convert user's input to lowercase
 // RETURN the variable containing user's choice
 // Test what function returns with console.log()
+
+
+// Step 4: Declare the players score variables
+//
+// Declare a variable called humanScore in the global scope and set it to 0
+// Declare a variable called computerScore in the global scope and set it to 0
