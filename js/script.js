@@ -1,6 +1,6 @@
 console.log("Hello World")
 
-// Step 2: Write the logic to get the computer choice
+// Step 1: Write the logic to get the computer choice
 //
 // Create function named getComputerChoice
 // Generate random number between 0 and 1 using Math.random()
@@ -14,8 +14,20 @@ console.log("Hello World")
 //      return "scissors"
 // Test what function returns with console.log()
 
+function getComputerChoice() {
+  let computerChoice = Math.random();
+  if (computerChoice < 0.33) {
+    return "rock"
+  } else if (computerChoice < 0.66) {
+    return "paper"
+  } else {
+    return "scissors"
+  }
+}
 
-// Step 3: Write the logic to get the human choice
+console.log(getComputerChoice());
+
+// Step 2: Write the logic to get the human choice
 //
 // Create function named getHumanChoice
 // Use prompt method to prompt user asking for "rock", "paper", or "scissors"
@@ -24,14 +36,22 @@ console.log("Hello World")
 // RETURN the variable containing user's choice
 // Test what function returns with console.log()
 
+function getHumanChoice() {
+  const humanChoice = prompt("Enter your choice (rock, paper, or scissors): ")
+  return humanChoice.toLowerCase()
+}
 
-// Step 4: Declare the players score variables
+console.log(getHumanChoice());
+
+// Step 3: Declare the players score variables
 //
 // Declare a variable called humanScore in the global scope and set it to 0
 // Declare a variable called computerScore in the global scope and set it to 0
 
+let humanScore = 0;
+let computerScore = 0;
 
-// Step 5: Write the logic to play a single round
+// Step 4: Write the logic to play a single round
 //
 // Crete function named playRound with parameters humanChoice and computerChoice
 // Convert humanChoice to lowercase and store it in a new variable
@@ -58,7 +78,7 @@ const computerSelection = getComputerChoice();
 playRound(humanSelection, computerSelection);
 
 
-// Step 6: Write the logic to play the entire game
+// Step 5: Write the logic to play the entire game
 //
 // Create function named playGame
 //  Declare humanScore and computerScore, and set both to 0
