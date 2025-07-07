@@ -25,8 +25,6 @@ function getComputerChoice() {
   }
 }
 
-console.log(getComputerChoice());
-
 // Step 2: Write the logic to get the human choice
 //
 // Create function named getHumanChoice
@@ -40,8 +38,6 @@ function getHumanChoice() {
   const humanChoice = prompt("Enter your choice (rock, paper, or scissors): ")
   return humanChoice.toLowerCase()
 }
-
-console.log(getHumanChoice());
 
 // Step 3: Declare the players score variables
 //
@@ -69,7 +65,19 @@ let computerScore = 0;
 // END IF
 
 function playRound(humanChoice, computerChoice) {
-  // your code here!
+  const human = humanChoice.toLowerCase();
+  const computer = computerChoice.toLowerCase();
+
+  if (human === computer) {
+    console.log("It's a tie!");
+    return
+  } else if ((human === "rock" && computer === "scissors") || (human === "paper" && computer === "rock") || (human === "scissors" && computer === "paper")) {
+    humanScore++;
+    console.log(`You win! ${human.charAt(0).toUpperCase() + human.slice(1)} beats ${computer.charAt(0).toUpperCase() + computer.slice(1)}`);
+  } else {
+    computerScore++;
+    console.log(`You lose! ${computer.charAt(0).toUpperCase() + computer.slice(1)} beats ${human.charAt(0).toUpperCase() + human.slice(1)}`);
+  }
 }
 
 const humanSelection = getHumanChoice();
