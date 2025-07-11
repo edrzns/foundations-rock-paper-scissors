@@ -1,23 +1,71 @@
-body, html {
-  height: 100%;
-  margin: 0;
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 30px;
+    padding: 40px;
+    background: #2d3748;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.label {
+    background: #e53e3e;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(229, 62, 62, 0.3);
+}
+
+.score {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.vs {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.buttons {
+    margin: 30px;
 }
 
 .button {
