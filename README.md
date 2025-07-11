@@ -1,6 +1,9 @@
 # Foundations: Rock Paper Scissors
 Solution for [Project: Rock Paper Scissors](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors) assignment by The Odin Project
 
+## Live Preview
+[Rock Paper Scissors](https://edrzns.github.io/foundations-rock-paper-scissors/)
+
 ## Features
 - Play 5 rounds against computer
 - Case-insensitive user input via `prompt()`
